@@ -33,3 +33,51 @@ h1 {
 section {
     height: 100vh;
 }
+
+
+
+.allcards {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-right {
+    width: 30%;
+    height: 50vh;
+    padding: 20px;
+    margin-top: 20px;
+    margin: 20px 350px 20px 0px;
+    background: rgb(100, 81, 81);
+    border-radius: 20px;
+    transform-style: preserve-3d;
+    box-shadow: 0 20px 20px rgba(63, 63, 71, 0.767)
+}
+
+.card-left {
+    transform-style: preserve-3d;
+    width: 30%;
+    height: 50vh;
+    padding: 20px;
+    margin-top: 20px;
+    margin: 20px 0px 20px 350px;
+    background: rgb(100, 81, 81);
+    border-radius: 20px;
+    box-shadow: 0 20px 20px rgba(63, 63, 71, 0.767)
+}
+
+
+.btn {
+    display: inline-block;
+    background: rgb(255, 199, 14);
+    color: rgb(14, 12, 10);
+    padding: 0.8rem 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: all 0.75s ease-out;
+}
+
+.card-text, .card-title {
+    transition: all 0.75s ease-out;
+}
