@@ -81,3 +81,7 @@ section {
 .card-text, .card-title {
     transition: all 0.75s ease-out;
 }
+
+h5, p {
+    color: white;
+}
