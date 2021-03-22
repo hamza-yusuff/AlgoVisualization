@@ -4,6 +4,12 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import * as dat from 'dat.gui'
 
 
+const cards = document.querySelectorAll(".card");
+const titles = document.querySelectorAll(".card-title");
+const texts = document.querySelectorAll(".card-text");
+const buttons = document.querySelectorAll(".btn");
+
+
 // Loading
 
 const textureLoader = new THREE.TextureLoader()
@@ -175,9 +181,6 @@ const tick = () => {
 }
 
 tick()
-
-
-
 // navbar 
 function navSlide() {
     const burger = document.querySelector(".burger");
@@ -203,3 +206,44 @@ function navSlide() {
 }
 
 navSlide();
+
+console.log(window.innerHeight);
+
+cards.forEach(card => {
+
+    card.addEventListener("mousemove", (e) => {
+      let xAxis = (window.innerWidth / 2 - e.pageX) / 30;
+      card.style.transform = `rotateY(${-xAxis}deg) rotateX(${-xAxis - 10}deg)`;
+  });
+    card.addEventListener("mouseenter", (e) => {
+        card.style.transition = "all 0.2s ease";
+        titles.forEach(title => {
+            title.style.transform = "translateZ(150px)";
+        });
+        texts.forEach(text => {
+            text.style.transform = "translateZ(150px)";
+        });
+        buttons.forEach(button => {
+            button.style.transform = "translateZ(75px)";
+        });
+    });
+    card.addEventListener("mouseleave", (e) => {
+        card.style.transition = "all 1.5s ease";
+        card.style.transform = `rotateY(0deg) rotateX(0deg)`;
+        const titles = document.querySelectorAll(".card-title");
+
+
+        titles.forEach(title => {
+            title.style.transform = "translateZ(0px)";
+        });
+        const texts = document.querySelectorAll(".card-text");
+        texts.forEach(text => {
+            text.style.transform = "translateZ(0px)";
+        });
+        const buttons = document.querySelectorAll(".btn");
+        buttons.forEach(button => {
+            button.style.transform = "translateZ(0px)";
+        });
+    });
+});
+
