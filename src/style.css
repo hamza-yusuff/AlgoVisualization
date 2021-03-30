@@ -19,6 +19,15 @@ body {
     mix-blend-mode: exclusion;
 }
 
+.particle {
+    position: absolute;
+}
+
+.headline {
+    position: relative;
+    top: -8%;
+}
+
 .container {
     height: 100vh;
     display: grid;
@@ -34,7 +43,6 @@ h1 {
 section {
     height: 100vh;
 }
-
 
 .allcards {
     display: flex;
@@ -67,7 +75,6 @@ section {
     box-shadow: 0 20px 20px rgba(63, 63, 71, 0.767)
 }
 
-
 .btn {
     display: inline-block;
     background: rgb(255, 199, 14);
@@ -78,14 +85,19 @@ section {
     transition: all 0.75s ease-out;
 }
 
-.card-text, .card-title {
+.card-text,
+.card-title {
     transition: all 0.75s ease-out;
 }
 
-h5, p {
+h5,
+p {
     color: white;
 }
+
+
 /* master */
+
 * {
     margin: 0;
     padding: 0;
@@ -202,4 +214,3 @@ nav {
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
-

@@ -16,7 +16,7 @@ const textureLoader = new THREE.TextureLoader()
 const normalTexture = textureLoader.load('/textures/NormalMap.png')
 
 // Debug
-const gui = new dat.GUI()
+//const gui = new dat.GUI()
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
@@ -58,12 +58,13 @@ pointLight2.position.set(-1.86, 1, -1.65)
 pointLight2.intensity = 10
 scene.add(pointLight2)
 
+/*
 const light1 = gui.addFolder('Light 1')
 
 light1.add(pointLight2.position, 'y').min(-3).max(3).step(0.01)
 light1.add(pointLight2.position, 'x').min(-6).max(6).step(0.01)
 light1.add(pointLight2.position, 'z').min(-3).max(3).step(0.01)
-light1.add(pointLight2, 'intensity').min(0).max(10).step(0.01)
+light1.add(pointLight2, 'intensity').min(0).max(10).step(0.01)*/
 
 //Light3
 
@@ -72,6 +73,7 @@ pointLight3.position.set(2.13, -3, -1.98)
 pointLight3.intensity = 6.8
 scene.add(pointLight3)
 
+/*
 const light2 = gui.addFolder('Light 2')
 
 light2.add(pointLight3.position, 'y').min(-3).max(3).step(0.01)
@@ -88,6 +90,7 @@ light2.addColor(light2Color, 'color').onChange(
         pointLight3.color.set(light2Color.color)
     }
 )
+*/
 
 /**
  * Sizes
@@ -115,7 +118,7 @@ window.addEventListener('resize', () => {
  * Camera
  */
 // Base camera
-const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
+const camera = new THREE.PerspectiveCamera(62.5, sizes.width / sizes.height, 0.1, 100)
 camera.position.x = 0
 camera.position.y = 0
 camera.position.z = 2
@@ -181,7 +184,7 @@ const tick = () => {
 }
 
 tick()
-// navbar 
+    // navbar 
 function navSlide() {
     const burger = document.querySelector(".burger");
     const nav = document.querySelector(".nav-links");
@@ -212,9 +215,9 @@ console.log(window.innerHeight);
 cards.forEach(card => {
 
     card.addEventListener("mousemove", (e) => {
-      let xAxis = (window.innerWidth / 2 - e.pageX) / 30;
-      card.style.transform = `rotateY(${-xAxis}deg) rotateX(${-xAxis - 10}deg)`;
-  });
+        let xAxis = (window.innerWidth / 2 - e.pageX) / 30;
+        card.style.transform = `rotateY(${-xAxis}deg) rotateX(${-xAxis - 10}deg)`;
+    });
     card.addEventListener("mouseenter", (e) => {
         card.style.transition = "all 0.2s ease";
         titles.forEach(title => {
@@ -246,4 +249,3 @@ cards.forEach(card => {
         });
     });
 });
-
