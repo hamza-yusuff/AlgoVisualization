@@ -8,7 +8,7 @@ const cards = document.querySelectorAll(".card");
 const titles = document.querySelectorAll(".card-title");
 const texts = document.querySelectorAll(".card-text");
 const buttons = document.querySelectorAll(".btn");
-const images = document.querySelectorAll(".icon");
+const imagess = document.querySelectorAll(".icon");
 
 
 // Loading
@@ -231,7 +231,7 @@ cards.forEach(card => {
         buttons.forEach(button => {
             button.style.transform = "translateZ(150px)";
         });
-        images.forEach(image => {
+        imagess.forEach(image => {
             image.style.transform = "translateZ(150px)";
         });
     });
@@ -252,8 +252,8 @@ cards.forEach(card => {
         buttons.forEach(button => {
             button.style.transform = "translateZ(0px)";
         });
-        const images = document.querySelectorAll(".icon");
-        images.forEach(image => {
+        const imagess = document.querySelectorAll(".icon");
+        imagess.forEach(image => {
             image.style.transform = "translateZ(0px)";
         });
     });
