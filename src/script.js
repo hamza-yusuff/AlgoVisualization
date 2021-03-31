@@ -8,6 +8,7 @@ const cards = document.querySelectorAll(".card");
 const titles = document.querySelectorAll(".card-title");
 const texts = document.querySelectorAll(".card-text");
 const buttons = document.querySelectorAll(".btn");
+const images = document.querySelectorAll(".icon");
 
 
 // Loading
@@ -210,10 +211,11 @@ function navSlide() {
 
 navSlide();
 
+
+// 3D animation of cards
 console.log(window.innerHeight);
 
 cards.forEach(card => {
-
     card.addEventListener("mousemove", (e) => {
         let xAxis = (window.innerWidth / 2 - e.pageX) / 30;
         card.style.transform = `rotateY(${-xAxis}deg) rotateX(${-xAxis - 10}deg)`;
@@ -227,7 +229,10 @@ cards.forEach(card => {
             text.style.transform = "translateZ(150px)";
         });
         buttons.forEach(button => {
-            button.style.transform = "translateZ(75px)";
+            button.style.transform = "translateZ(150px)";
+        });
+        images.forEach(image => {
+            image.style.transform = "translateZ(150px)";
         });
     });
     card.addEventListener("mouseleave", (e) => {
@@ -246,6 +251,10 @@ cards.forEach(card => {
         const buttons = document.querySelectorAll(".btn");
         buttons.forEach(button => {
             button.style.transform = "translateZ(0px)";
+        });
+        const images = document.querySelectorAll(".icon");
+        images.forEach(image => {
+            image.style.transform = "translateZ(0px)";
         });
     });
 });
