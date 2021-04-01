@@ -3,7 +3,7 @@ var w, h, loopId, id, canvas, ctx, particles;
 var options = {
     particleColor: "rgba(255,255,255)",
     lineColor: "rgba(0,181,255)",
-    particleAmount: 220,
+    particleAmount: 230,
     defaultRadius: 2.8,
     variantRadius: 10,
     defaultSpeed: 1,
@@ -25,7 +25,7 @@ function init() {
 
 function resizeReset() {
     w = canvas.width = screen.width;
-    h = canvas.height = screen.width * 2;
+    h = canvas.height = screen.width * 3; // size length
 }
 
 function initialiseElements() {
