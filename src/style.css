@@ -53,7 +53,7 @@ h1 {
 
 .card {
     width: 37%;
-    height: 60vh;
+    height: 60vh; /* 570px */
     padding: 20px;
     margin-top: 20px;
     background: rgba(66, 59, 80, 0.096);
