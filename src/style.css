@@ -52,7 +52,7 @@ h1 {
 }
 
 .card {
-    width: 25%;
+    width: 37%;
     height: 60vh;
     padding: 20px;
     margin-top: 20px;
@@ -71,26 +71,42 @@ h1 {
 
 }
 
+.left-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.right-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
 .card-body {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-
 }
 
 
 
 .btn {
     display: inline-block;
-    background: rgb(255, 199, 14);
+    background: rgb(72, 119, 247);
     color: rgb(14, 12, 10);
     padding: 0.8rem 1rem;
-    margin-top: 2rem;
-    margin-bottom: 5%;
+    margin: 15% 33% 15% 33%;
+    border-radius: 30px 30px 30px 30px;
     cursor: pointer;
     transition: all 1.2s ease-out;
     transform-style: preserve-3d;
+    color: aliceblue;
+}
+
+.btn-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-text,
@@ -98,13 +114,15 @@ h1 {
 .icon {
     transition: all 1.2s ease-out;
     transform-style: preserve-3d;
-    margin-bottom: 5%;
+    margin-top: 30%;
+    margin-bottom: 15%;
 }
 
 .card-title {
     font-size: 1.8rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+    margin: 0 5% 5% 25%;
 }
 
 .card-text {
