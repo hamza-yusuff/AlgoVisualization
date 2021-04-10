@@ -62,18 +62,13 @@
     </div>
     <!-- content -->
     <div class="container">
-        <p class="responsive-p">The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970. It is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by creating an initial configuration and observing how it evolves.
-            <br><br>Rules:<br><br>
-
-            1. Any live cell with fewer than two live neighbours dies, as if by underpopulation.
-            <br>
-            2. Any live cell with two or three live neighbours lives on to the next generation.
-            <br>
-            3. Any live cell with more than three live neighbours dies, as if by overpopulation.
-            <br>
-            4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
+        <p class="responsive-p">In botany, phyllotaxis or phyllotaxy is the arrangement of leaves on a plant stem (from Ancient Greek phýllon "leaf" and táxis "arrangement"). Phyllotactic spirals form a distinctive class of patterns in nature. 
+            <br><br>
+        The Algorithm for Phyllotaxis:
+            <br><br>
+        Consider 'n' to be the number of dots in the phyllotaxis pattern,'c' be the scaling factor for the dots, and 'r = c * sqrt(n)' be the radius of the nth dot. The standard angle for the the nth dot in the pattern is a = (137.5 * n). The polar coordinates,radius and angle, are then converted to Cartesian coordinates where x = r * cos(a) and y = r * sin(a). As the number of dots increases, the angle is adjusted with it, and a dot is produced at the corresponding Cartesian coordinates. 
             
-            <br><br>The following animation in p5.js visualizes the Game of Life.
+            <br><br>The following animation in p5.js visualizes the Phyllotaxis pattern.
             <br><br>
             <div id='algo-phyll'>
 
@@ -83,7 +78,23 @@
                 The code for the above visualization is given below.
                 <br><br>
                 <image src='taseen-images/code.png'></image>
-            
+                <br></br>
+                The following are some Maurer roses drawn with some values for different scaling factor 'c' and angle 'a':
+                <br><br>
+                <div class='images-algo'>
+                    <div class='algo-some'> c=3 a=137.5
+                        <image src='taseen-images/3-137.5.png'></image>
+                    </div>
+                    <div class='algo-some'> c=8 a=137.5
+                        <image src='taseen-images/8-137.5.png'></image>
+                    </div>
+                    <div class='algo-some'> c=3 a=137.2
+                        <image src='taseen-images/3-137.2.png'></image>
+                    </div>
+                    <div class='algo-some'> c=1 a=137.9
+                        <image src='taseen-images/1-137.9.png'></image>
+                    </div>
+                </div>
                 <br><br> To know more :
                 <br><br>
                 <a class='know-more-links' href='https://en.wikipedia.org/wiki/Phyllotaxis' target="_blank">//en.wikipedia.org/wiki/Phyllotaxis</a>
