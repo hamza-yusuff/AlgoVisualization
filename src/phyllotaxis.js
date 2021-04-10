@@ -19,7 +19,7 @@ function draw() {
   translate(width / 2, height / 2);
   rotate(n * 0.3);
   for (var i = 0; i < n; i++) {
-    var a = i * 137.5;
+    var a = i * 137.3;
     var r = c * sqrt(i);
     var x = r * cos(a);
     var y = r * sin(a);
