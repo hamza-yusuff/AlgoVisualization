@@ -55,7 +55,7 @@ nav {
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: black;
+  background-color:black;
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -153,6 +153,18 @@ nav {
 .below-algo {
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
+}
+
+.images-algo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.algo-some {
+  padding: 5px;
+  font-size: bold;
 }
 
 
