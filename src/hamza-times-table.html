@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="template-style-hamza-times-table.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navigation -->
+    <nav>
+        <div class="logo">
+            <h4>Algorithma</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Algorithms</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <!-- heading -->
+    <div class="container">
+        <h2 class="h1">Times Table Visualization</h2>
+    </div>
+
+
+    <!-- profile -->
+    <div class="spacing">
+        <div class="container">
+            <div class="wrapper">
+                <div class="box">
+                    <div class="content">
+                        <div class="image">
+                            <img src="images/ian.jpeg" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="name">Hamza Yusuff</div>
+                            <div class="title">Computer Science Student at University of Waterloo</div>
+                            <div class="icons">
+                                <i class="fab fa-linkedin fa-lg"></i>
+                                <i class="fab fa-instagram fa-lg"></i>
+                                <i class="fab fa-facebook-square fa-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content -->
+    <div class="container">
+        <p class="responsive-p">
+            This article has been inspired by
+            <br>
+            <a href="https://youtu.be/qhbuKbxJsk8">
+                Times Tables, Mandelbrot and the Heart of Mathematics by MATHLOGER
+            </a>
+            <br> and
+            <br>
+            <a href='http://xahlee.info/SpecialPlaneCurves_dir/Cardioid_dir/_p/LightsRaysReflections.pdf'>
+                LightsRaysReflections by mathematician Simon Plouffe
+            </a>
+            <br><br>Algorithm :<br> Draw a cricle. Take a number n (for the sake of our explanation more than four at least), and put n points on the perimeter of the circle equally spaced. Then, lable the points from 0 to n and put the nth point back
+            on the point labelled zero since nmodn is zero. Now, let's consider 2's times table as an example, till nth number. So, we first mutiply 2 with 1, and connect the point labelled one to the point labelled two using a straight line. Then, we
+            do the same for 2x2, and connect the point labelled 2 to the point labelled 4. After that, we again multiply 2 with 3, and connect the point labelled 3 to the point labelled 6. Similarly, we continue mutiplying 2 with numbers from 4 to n,
+            and connect the point labelled with the number we are multiplying 2 with to the point labelled with the product of 2 and the other respective number, and if the product is greater than the number n, then we simply take the modn of the product
+            and connect the point multiplying two with to the point labelled with the result of product (of 2 and some number) modn. This way, we get an aesthetic looking circle with n lines inside, bridging points on the perimeter of the circle.
+            <br><br> The shape we obtain for the times table of 2 has a special place in Mathematics, and people call it the cardioid. It appears in a lot of places in maths, and needless to say, its a feast for the eyes. Similarly, if we follow the same
+            algorithm for three, a very distinct shape materializes as well, and we call it the nephroid. Both nephroid and cardioid appears in Manelbrot Set, and suprisingly on your cofee as well, only if you choose to put the light falling on your coffee
+            at a definitive angle. To know more about these shapes you can visit the links here -
+            <a href='http://xahlee.info/SpecialPlaneCurves_dir/Cardioid_dir/_p/LightsRaysReflections.pdf'>
+                LightsRaysReflections by mathematician Simon Plouffe
+            </a> , <a href="https://youtu.be/qhbuKbxJsk8">
+                Times Tables, Mandelbrot and the Heart of Mathematics by MATHLOGER
+            </a> . Similarly, if you follow the algorithm for different values of n and times-table of different numbers (from one to n), you'll end up awakening the artisit inside you. Give it a try mate!. If you want you can use the link given below
+            for using our program in p5.js to visualize the stunning shapes, and ultimately fall in love with Algorithms.
+
+            <br><br>The following animation in p5.js shows visualization of Times Table from one to 200 for different values of factor (which was two in our example above)
+            <br><br>
+            <div id='algo-times-table'>
+
+            </div>
+            <br>
+            <br>
+            <br><br>
+            <a class='slider' href='p5-times-table-slider.html'>
+                <h3>Try visualizing different shapes for your own desired values of factor using this link (pro tip: YOU WONT REGRET)</h3>
+            </a>
+            <br><br>
+            <div class='below-algo-times-table'>
+                The code for the above algorithm is as given below
+                <br><br>
+                <image src='hamza-algo-times-table/algo-times-table.png'></image>
+                <br></br>
+                <h3>The following are some times table visualizations drawn with some values of factor, with total being 200:</h3>
+                <br><br>
+                <div class='images-algo'>
+                    <div class='algo-some'>
+
+                        <image src='hamza-algo-times-table/times-table-2.png'></image>
+                        <br><br>
+                        <h3>factor = 2</h3>
+                    </div>
+                    <div class='algo-some'>
+                        <image src='hamza-algo-times-table/times-table-3.png'></image>
+                        <br><br>
+                        <h3>factor = 3</h3>
+                    </div>
+                    <div class='algo-some'>
+                        <image src='hamza-algo-times-table/times-table-23.png'></image>
+                        <br><br>
+                        <h3>factor = 23</h3>
+                    </div>
+                    <div class='algo-some'>
+                        <image src='hamza-algo-times-table/times-table-34.png'></image>
+                        <br><br>
+                        <h3>factor = 34</h3>
+                    </div>
+
+
+
+                </div>
+                <br><br> To know more :
+                <br><br>
+                <a class='know-more-links' href='https://youtu.be/bl3nc_a1nvs' target="_blank">https://youtu.be/bl3nc_a1nvs</a>
+                <br>
+                <a class='know-more-links' href='https://en.wikipedia.org/wiki/Cardioid' target="_blank">https://en.wikipedia.org/wiki/Cardioid</a>
+                <br>
+                <a class='know-more-links' href='https://youtu.be/6z7GQewK-Ks' target="_blank">https://youtu.be/6z7GQewK-Ks</a>
+                <br>
+            </div>
+
+        </p>
+    </div>
+    <!-- cards -->
+    <div class="container">
+        <h2 class="h1">Discover more</h2>
+        <hr />
+    </div>
+    <div class="container">
+        <div class="card-container">
+            <div class="cards">
+                <div class="card-item">
+                    <div class="card-image" style="background-image: url(https://images.unsplash.com/photo-1523978591478-c753949ff840?w=900);">
+                    </div>
+                    <div class="card-info">
+                        <h2 class="card-title">I am groot</h2>
+                        <p class="card-intro responsive-p">Far far away, behind the word mountains, far from the countries Vokalia, there live the blind texts.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card-item">
+                    <div class="card-image" style="background-image: url(https://images.unsplash.com/photo-1523978591478-c753949ff840?w=900);">
+                    </div>
+                    <div class="card-info">
+                        <h2 class="card-title">A new trail you can't miss</h2>
+                        <p class="card-intro responsive-p">Far far away, behind the word mountains, far from the countries Vokalia, there live the blind texts.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card-item">
+                    <div class="card-image" style="background-image: url(https://images.unsplash.com/photo-1523978591478-c753949ff840?w=900);">
+                    </div>
+                    <div class="card-info">
+                        <h2 class="card-title">1 Day routes</h2>
+                        <p class="card-intro responsive-p">Far far away, behind the word mountains, far from the countries Vokalia, there live the blind texts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="script.js" async defer></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
+<script src='p5-times-table.js'></script>
+</body>
+
+</html>
