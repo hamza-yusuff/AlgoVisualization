@@ -1,340 +1,331 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    height: 100vh;
-    font-family: 'Poppins';
-    background: rgb(24, 24, 24);
+  height: 100vh;
+  font-family: "Poppins";
+  background: rgb(24, 24, 24);
 }
 
 .webgl {
-    position: absolute;
-    top: 0;
-    left: 0;
-    outline: none;
-    mix-blend-mode: exclusion;
+  position: absolute;
+  top: 0;
+  left: 0;
+  outline: none;
+  mix-blend-mode: exclusion;
 }
 
 .particle {
-    position: absolute;
+  position: absolute;
 }
 
 .headline {
-    position: relative;
-    top: -8%;
+  position: relative;
+  top: -8%;
 }
 
 .container {
-    height: 100vh;
-    display: grid;
-    place-items: center;
+  height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 h1 {
-    font-size: 8rem;
-    text-transform: uppercase;
-    color: white;
+  font-size: 8rem;
+  text-transform: uppercase;
+  color: white;
 }
 
 .algo-cards {
-    height: 100vh;
+  height: 100vh;
 }
 
 .allcards {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card {
-    width: 37%;
-    height: 60vh; /* 570px */
-    padding: 20px;
-    margin-top: 20px;
-    background: rgba(66, 59, 80, 0.096);
-    border-radius: 20px;
-    transform-style: preserve-3d;
-    box-shadow: 0 20px 20px rgba(63, 63, 71, 0.767)
+  width: 37%;
+  height: 60vh; /* 570px */
+  padding: 20px;
+  margin-top: 20px;
+  background: rgba(66, 59, 80, 0.096);
+  border-radius: 20px;
+  transform-style: preserve-3d;
+  box-shadow: 0 20px 20px rgba(63, 63, 71, 0.767);
 }
 
 .card-right {
-    margin: 20px 350px 20px 0px;
+  margin: 20px 350px 20px 0px;
 }
 
 .card-left {
-    margin: 20px 0px 20px 350px;
-
+  margin: 20px 0px 20px 350px;
 }
 
 .left-content {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .right-content {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .card-body {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-
-
 .btn {
-    display: inline-block;
-    background: rgb(72, 119, 247);
-    color: rgb(14, 12, 10);
-    padding: 0.8rem 1rem;
-    margin: 15% 33% 15% 33%;
-    border-radius: 30px 30px 30px 30px;
-    cursor: pointer;
-    transition: all 1.2s ease-out;
-    transform-style: preserve-3d;
-    color: aliceblue;
+  display: inline-block;
+  background: rgb(72, 119, 247);
+  color: rgb(14, 12, 10);
+  padding: 0.8rem 1rem;
+  margin: 15% 33% 15% 33%;
+  border-radius: 30px 30px 30px 30px;
+  cursor: pointer;
+  transition: all 1.2s ease-out;
+  transform-style: preserve-3d;
+  color: aliceblue;
 }
 
 .btn-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-text,
 .card-title,
 .icon {
-    transition: all 1.2s ease-out;
-    transform-style: preserve-3d;
-    margin-top: 30%;
-    margin-bottom: 15%;
+  transition: all 1.2s ease-out;
+  transform-style: preserve-3d;
+  margin-top: 30%;
+  margin-bottom: 15%;
 }
 
 .card-title {
-    font-size: 1.8rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    margin: 0 5% 5% 25%;
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  margin: 0 5% 5% 25%;
 }
 
 .card-text {
-    text-align: center;
-    font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
 }
 
 .icon {
-    box-shadow: 0 20px 20px rgba(65, 58, 58, 0.967)
+  box-shadow: 0 20px 20px rgba(65, 58, 58, 0.967);
 }
 
 h5,
 p {
-    color: white;
+  color: white;
 }
-
 
 /* master */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 /* navigation */
 
 nav {
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 8vh;
-    background-color: rgb(24, 24, 24);
-    border-bottom: 1px solid white;
-    font-family: 'Poppins';
-    padding: 15px 20px;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 8vh;
+  background-color: rgb(24, 24, 24);
+  border-bottom: 1px solid white;
+  font-family: "Poppins";
+  padding: 15px 20px;
 }
 
 .logo {
-    color: rgb(226, 226, 226);
-    letter-spacing: 5px;
-    font-size: 20px;
+  color: rgb(226, 226, 226);
+  letter-spacing: 5px;
+  font-size: 20px;
 }
 
 .nav-links {
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
 }
 
 .nav-links li {
-    list-style: none;
+  list-style: none;
 }
 
 .nav-links a {
-    color: rgb(226, 226, 226);
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px;
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .burger {
-    display: none;
+  display: none;
 }
 
 .burger div {
-    width: 25px;
-    height: 3px;
-    background-color: rgb(226, 226, 226);
-    margin: 5px;
-    transition: all 0.3s ease;
+  width: 25px;
+  height: 3px;
+  background-color: rgb(226, 226, 226);
+  margin: 5px;
+  transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 1024px) {
-    .nav-links {
-        width: 60%;
-    }
+  .nav-links {
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
-    .nav-links {
-        position: fixed;
-        right: 0px;
-        height: 92vh;
-        top: 8vh;
-        background-color: rgb(24, 24, 24);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-    }
-    .nav-links li {
-        opacity: 0;
-    }
-    .burger {
-        display: block;
-        cursor: pointer;
-    }
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: fixed;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
 }
 
 .nav-active {
-    transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 @keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .toggle .line2 {
-    opacity: 0;
+  opacity: 0;
 }
 
 .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-5px, -6px);
 }
-
 
 /* 3D rotate gallery */
 
 .info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: 10%;
-    margin-right: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .info h1 {
-    font-size: 2.7em;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    margin-bottom: 20px;
-    margin-right: 60%;
-    text-decoration: underline;
+  font-size: 2.7em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-right: 60%;
+  text-decoration: underline;
 }
 
 .info p {
-    font-size: 1.5em;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
-    text-align: start;
-    
-    
+  font-size: 1.5em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  text-align: start;
 }
 
 .algo-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .box {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    transform-style: preserve-3d;
-    animation: animate 20s linear infinite;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  animation: animate 20s linear infinite;
 }
 
 @keyframes animate {
-    0%
-    {
-        transform: perspective(1000px) rotateY(0deg);
-    }
-    100%
-    {
-        transform: perspective(1000px) rotateY(360deg);
-    }
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
 }
 
 .box span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform-origin: center;
-    transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
-    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+  -webkit-box-reflect: below 0px
+    linear-gradient(transparent, transparent, #0004);
 }
 
 .box span img {
-    position: absolute;
-    opacity: 0.95;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  position: absolute;
+  opacity: 0.95;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
