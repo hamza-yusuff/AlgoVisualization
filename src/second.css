@@ -11,7 +11,7 @@ body {
   background: rgb(24, 24, 24);
 }
 
-.webgl {
+/* .webgl {
   position: absolute;
   top: 0;
   left: 0;
@@ -32,7 +32,7 @@ body {
   height: 100vh;
   display: grid;
   place-items: center;
-}
+} */
 
 h1 {
   font-size: 8rem;
@@ -41,7 +41,7 @@ h1 {
 }
 
 .algo-cards {
-  height: 100vh;
+  height: 100%;
 }
 
 .allcards {
