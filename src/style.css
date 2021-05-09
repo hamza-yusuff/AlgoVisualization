@@ -6,9 +6,14 @@
 
 html,
 body {
-    height: 100vh;
+    <<<<<<< HEAD height: 100vh;
     max-width: 99.5vw !important;
     background: black !important;
+    =======height: 100vh;
+    width: 100vw;
+    font-family: "Poppins";
+    background: black;
+    >>>>>>>e992ad573ef7f74966d7e3c418c3db92e3e8b03e
 }
 
 .webgl {
@@ -341,7 +346,7 @@ nav {
     font-size: 30px;
     font-weight: 900;
     /* color: black !important; */
-    color: white!important;
+    color: white !important;
 }
 
 .text {
@@ -503,4 +508,24 @@ nav {
 
 .email-btn:hover {
     background-color: #015aff;
+}
+
+.view_algo {
+    margin-right: 4%;
+    margin-bottom: 6%;
+    cursor: pointer;
+    border: none;
+    background-image: none;
+    background-color: #f2a365;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    width: 15%;
+}
+
+.algo-btn {
+    text-align: right;
 }
