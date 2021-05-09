@@ -333,7 +333,7 @@ nav {
     font-family: "Open Sans", sans-serif;
     width: 55%;
     float: right;
-    height: 400px;
+    height: 550px;
     padding: 100px;
     background-color: #f2a365;
     max-width: 99.5vw;
@@ -348,7 +348,7 @@ nav {
 }
 
 .text {
-    font-size: 18px;
+    font-size: 22px;
     /* color: #545454; */
     color: white !important;
     line-height: 30px;
@@ -360,13 +360,14 @@ nav {
     display: flex;
     justify-content: space-between;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 17px;
     color: white;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1500px) {
     .inner-container {
         padding: 80px;
+        height: 700px;
     }
 }
 
