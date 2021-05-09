@@ -6,14 +6,13 @@
 
 html,
 body {
-    <<<<<<< HEAD height: 100vh;
+    height: 100vh;
     max-width: 99.5vw !important;
     background: black !important;
-    =======height: 100vh;
+    height: 100vh;
     width: 100vw;
     font-family: "Poppins";
     background: black;
-    >>>>>>>e992ad573ef7f74966d7e3c418c3db92e3e8b03e
 }
 
 .webgl {
