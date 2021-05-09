@@ -29,7 +29,7 @@ function draw() {
 
         rotate(space);
 
-        fill(r, g, b)
+        fill(r, g, b);
 
         rect(200, 0, h, 1);
     }
