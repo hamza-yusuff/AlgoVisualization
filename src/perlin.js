@@ -1,7 +1,7 @@
 var start = 0;
 
 function setup() {
-    var canvas = createCanvas(windowWidth / 2, 800);
+    var canvas = createCanvas(windowWidth - 10, 800);
     canvas.parent("perlin");
     angleMode(DEGREES);
     noiseDetail(8);
