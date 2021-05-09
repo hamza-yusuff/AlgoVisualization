@@ -7,9 +7,8 @@
 html,
 body {
     height: 100vh;
-    width: 100vw;
-    font-family: "Poppins";
-    background: black;
+    max-width: 99.5vw !important;
+    background: black !important;
 }
 
 .webgl {
@@ -34,13 +33,24 @@ body {
 .mainTitle {
     position: relative;
     max-width: fit-content;
-    top: -27vw;
+    display: flex;
+    align-items: center;
+    top: -500px;
     margin: 0 auto;
 }
 
 .mainTitle>h1 {
     color: #f2a365;
     /* color: white; */
+}
+
+@media screen and (max-width: 1700px) {
+    /* .mainTitle {
+        
+    } */
+    .mainTitle>h1 {
+        top: -480px;
+    }
 }
 
 .container {
@@ -179,7 +189,7 @@ nav {
     color: white;
     font-family: "Poppins";
     padding: 15px 20px;
-    max-width: 100vw;
+    max-width: 99vw !important;
 }
 
 .logo {
@@ -313,6 +323,7 @@ nav {
     overflow: hidden;
     padding: 100px 0;
     height: fit-content;
+    max-width: 99.5vw;
 }
 
 .inner-container {
@@ -322,6 +333,7 @@ nav {
     height: 400px;
     padding: 100px;
     background-color: #f2a365;
+    max-width: 99.5vw;
 }
 
 .inner-container h1 {
@@ -427,7 +439,7 @@ nav {
     background: #222831;
     color: white;
     height: 400px;
-    width: 100vw;
+    width: 99.5vw;
 }
 
 .footer .footer-content {
@@ -483,7 +495,7 @@ nav {
     text-decoration: none;
     color: white;
     background-color: rgb(31, 121, 196);
-    margin-left: 0 auto;
+    margin: 0 auto;
     border: none;
     border-radius: 20px;
     font-weight: 300;
