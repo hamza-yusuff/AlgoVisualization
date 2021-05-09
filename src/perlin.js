@@ -1,7 +1,7 @@
 var start = 0;
 
 function setup() {
-  var canvas = createCanvas(windowWidth, 800);
+  var canvas = createCanvas(windowWidth / 2, 800);
   canvas.parent("perlin");
   angleMode(DEGREES);
   noiseDetail(8);
@@ -29,7 +29,7 @@ function draw() {
 
     rotate(space);
 
-    //fill(r, g, b);
+    fill(r, g, b);
 
     rect(200, 0, h, 1);
   }
