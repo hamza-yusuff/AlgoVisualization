@@ -329,3 +329,66 @@ nav {
   height: 100%;
   object-fit: cover;
 }
+
+/* Footer */
+
+.footer {
+  background: rgb(24, 24, 24);
+  color: white;
+  height: 400px;
+  width: 100%;
+}
+
+.footer .footer-content {
+  /* border-top: 1px solid grey;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .footer-content .about {
+  flex: 0.5;
+  padding: 80px 10px 30px 30px;
+  opacity: 1;
+}
+
+.footer .footer-content .about > p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.footer .footer-content .about > h2 {
+  font-size: 30px;
+}
+
+.footer .footer-content .about ul li a {
+  color: aliceblue;
+}
+.footer .footer-content .about ul li a:hover {
+  color: rgb(58, 133, 199);
+}
+
+.footer .footer-content .about ul {
+  margin-left: 20px;
+}
+
+.email-btn {
+  display: inline-block;
+  height: 40px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(31, 121, 196);
+  margin-left: 60%;
+  border: none;
+  border-radius: 20px;
+}
+
+.email-btn:hover {
+  background-color: #015aff;
+}
