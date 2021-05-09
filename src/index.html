@@ -9,9 +9,7 @@
     <link rel="stylesheet" href="./style.css">
     <title>Algorithma</title>
 
-
 </head>
-
 <body>
 
     <nav>
@@ -31,18 +29,29 @@
     </nav>
 
 
+
     <div class='container'>
-        <h1 class='headline'>Algorithma</h1>
+
+        <div id='perlin'>
+
+        </div>
+        <div class='mainTitle'>
+            <h1>Algorithma</h1>
+        </div>
     </div>
-    <canvas class="webgl"></canvas>
-    <canvas class='particle'></canvas>
+
+    <!-- <canvas class="webgl"></canvas> removed three js -->
+
+    <!-- <canvas class='particle'></canvas> removed particle.js-->
     </canvas>
 
     <div class="info">
         <h1>Information</h1>
         <p class="text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi distinctio harum explicabo voluptatem, facere cumque voluptas tempora quam fugiat natus sunt amet nihil eum tempore id reprehenderit laudantium facilis dolorum?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi distinctio harum explicabo voluptatem, facere cumque voluptas tempora quam fugiat natus sunt amet nihil eum tempore id reprehenderit laudantium facilis dolorum?<br><br>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi distinctio harum explicabo voluptatem, facere cumque voluptas tempora quam fugiat natus sunt amet nihil eum tempore id reprehenderit laudantium facilis dolorum?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi distinctio harum explicabo voluptatem, facere cumque voluptas tempora quam fugiat natus sunt amet nihil eum tempore id reprehenderit laudantium facilis dolorum?<br><br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi distinctio harum explicabo voluptatem, facere cumque voluptas tempora quam fugiat natus sunt amet nihil eum tempore id reprehenderit laudantium facilis dolorum?Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Animi distinctio harum explicabo voluptatem, facere cumque voluptas tempora quam fugiat natus sunt amet nihil eum tempore id reprehenderit laudantium facilis dolorum?<br><br> Lorem ipsum, dolor sit
+            amet consectetur adipisicing elit. Animi distinctio harum explicabo voluptatem, facere cumque voluptas tempora quam fugiat natus sunt amet nihil eum tempore id reprehenderit laudantium facilis dolorum?Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Animi distinctio harum explicabo voluptatem, facere cumque voluptas tempora quam fugiat natus sunt amet nihil eum tempore id reprehenderit laudantium facilis dolorum?<br><br>
         </p>
     </div>
 
@@ -59,125 +68,28 @@
         </div>
     </section>
 
-    <section class="algo-cards">
-        <div class="allcards">
-            <div class="card-left card" data-aos="fade-left" data-aos-delay="100">
-                <div class="card-body">
-                    <div class="left-content">
-                    <img class="icon" src="index-pictures/phyllotaxis.PNG"
-                    width="280" height="300">
-                    <h5 class="card-title">Card title</h5>
-                    </div>
-                    <div class="right-content">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary"><div class="btn-text">Go somewhere</div></a>
-                </div>
-                </div>
-            </div>
-            <div class="card-right card" data-aos="fade-right" data-aos-delay="100">
-                <div class="card-body">
-                    <div class="left-content">
-                    <img class="icon" src="index-pictures/maurer-rose.PNG"
-                    width="280" height="300">
-                    <h5 class="card-title">Card title</h5>
-                    </div>
-                    <div class="right-content">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary"><div class="btn-text">Go somewhere</div></a>
-                </div>
-                </div>
-            </div>
 
-            <div class="card-left card" data-aos="fade-left" data-aos-delay="100">
-                <div class="card-body">
-                    <div class="left-content">
-                    <img class="icon" src="index-pictures/Game-of-life.PNG"
-                    width="280" height="300">
-                    <h5 class="card-title">Card title</h5>
-                    </div>
-                    <div class="right-content">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary"><div class="btn-text">Go somewhere</div></a>
-                </div>
-                </div>
-            </div>
-            <div class="card-right card" data-aos="fade-right" data-aos-delay="100">
-                <div class="card-body">
-                    <div class="left-content">
-                    <img class="icon" src="index-pictures/phyllotaxis.PNG"
-                    width="280" height="300">
-                    <h5 class="card-title">Card title</h5>
-                    </div>
-                    <div class="right-content">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary"><div class="btn-text">Go somewhere</div></a>
-                </div>
-                </div>
-            </div>
-            <div class="card-left card" data-aos="fade-left" data-aos-delay="100">
-                <div class="card-body">
-                    <div class="left-content">
-                    <img class="icon" src="index-pictures/maurer-rose.PNG"
-                    width="280" height="300">
-                    <h5 class="card-title">Card title</h5>
-                    </div>
-                    <div class="right-content">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary"><div class="btn-text">Go somewhere</div></a>
-                </div>
-                </div>
-            </div>
-            <div class="card-right card" data-aos="fade-right" data-aos-delay="100">
-                <div class="card-body">
-                    <div class="left-content">
-                    <img class="icon" src="index-pictures/Game-of-life.PNG"
-                    width="280" height="300">
-                    <h5 class="card-title">Card title</h5>
-                    </div>
-                    <div class="right-content">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary"><div class="btn-text">Go somewhere</div></a>
-                </div>
-                </div>
-            </div>
-            <div class="card-left card" data-aos="fade-left" data-aos-delay="100">
-                <div class="card-body">
-                    <div class="left-content">
-                    <img class="icon" src="index-pictures/maurer-rose.PNG"
-                    width="280" height="300">
-                    <h5 class="card-title">Card title</h5>
-                    </div>
-                    <div class="right-content">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary"><div class="btn-text">Go somewhere</div></a>
-                </div>
-                </div>
-            </div>
+<div class="footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h2>Contribute!</h2>
+            <p>We are open for anyone who wants to add their visualizations to our website.
+             The source code pdf for the template is attached here. Feel free to email us the files so that our team can evaluate and add your visualization. <br> <br>
+             Happy Visualizing!
+            </p>
+            <ul>
+                <li><a href="#">Template html</a></li>
+                <li><a href="#">Template css</a></li>
+            <a class="email-btn" href="mailto:us@gamil.com">Email</a>
+            </ul>
+
+            
         </div>
-
-        <div class="footer">
-            <div class="footer-content">
-                <div class="footer-section about">
-                    <h2>Contribute!</h2>
-                    <p>We are open for anyone who wants to add their visualizations to our website.
-                     The source code pdf for the template is attached here. Feel free to email us the files so that our team can evaluate and add your visualization. <br> <br>
-                     Happy Visualizing!
-                    </p>
-                    <ul>
-                        <li><a href="#">Template html</a></li>
-                        <li><a href="#">Template css</a></li>
-                    <a class="email-btn" href="mailto:us@gamil.com">Email</a>
-                    </ul>
-
-                    
-                </div>
-                
-                    
-                </div>
-                
-            </div>
+        
+            
         </div>
-    </section>
+        
+    </div>
 
 
 
@@ -188,6 +100,8 @@
     </script>
     <script src='./second.js'>
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
+    <script src='perlin.js'></script>
 
 </body>
 
