@@ -7,12 +7,11 @@ var start = 0;
 
 function setup() {
   var canvas = createCanvas(400, 400);
-    // Move the canvas so it's inside our <div id="algo-phyll">.
-    canvas.parent('algo-phyll');
+  // Move the canvas so it's inside our <div id="algo-phyll">.
+  canvas.parent("algo-phyll");
   angleMode(DEGREES);
   colorMode(HSB);
 }
-
 
 function draw() {
   background(0);
@@ -33,8 +32,8 @@ function draw() {
   start += 5;
 }
 
-const animate = document.querySelector('#algo-phyll');
+const animate = document.querySelector("#algo-phyll");
 
 animate.addEventListener("click", () => {
-   draw();
-} );
+  draw();
+});
