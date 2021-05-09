@@ -509,8 +509,7 @@ nav {
 }
 
 .view_algo {
-    margin-right: 4%;
-    margin-bottom: 6%;
+    margin-bottom: 10%;
     cursor: pointer;
     border: none;
     background-image: none;
@@ -520,10 +519,10 @@ nav {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 12px;
-    width: 15%;
+    font-size: 15px;
+    width: 16%;
 }
 
 .algo-btn {
-    text-align: right;
+    text-align: center;
 }
