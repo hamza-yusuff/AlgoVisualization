@@ -5,7 +5,7 @@ function setup() {
 }
 
 function draw() {
-  background(30);
+  background(0);
   rotateX(60);
   noFill();
   stroke(255);
